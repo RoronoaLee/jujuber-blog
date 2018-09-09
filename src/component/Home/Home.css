@@ -3,6 +3,19 @@
     position: relative;
     width: 70%;
     margin: 0 auto;
+    text-align: center;
+}
+
+.home-posts section:first-child {
+    text-align: left;
+}
+
+.showMore {
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 43px;
 }
 
 @media screen and (max-width: 750px){

@@ -18,6 +18,7 @@
     "redux": "^4.0.0",
     "redux-router": "^1.0.0-beta4",
     "redux-thunk": "^2.3.0",
+    "rimraf": "^2.6.2",
     "save": "^2.3.2",
     "style-loader": "^0.23.0",
     "webpack-dev-server": "^3.1.5",
@@ -43,7 +44,8 @@
     "new": "node ./bin/touch.js",
     "generate": "mkdir ./src/route && node ./bin/generate.js",
     "routing": "node ./bin/makeRoute.js",
-    "jujuber": "npm run generate && npm run routing && npm run build",
+    "cleanup": "node ./bin/cleanup.js",
+    "jujuber": "npm run cleanup && npm run generate && npm run routing && npm run build",
     "prod": "SET NODE_ENV=production"
   },
   "author": "",

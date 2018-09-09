@@ -11,3 +11,5 @@ src/route/
 src/appRouter\.js
 
 src/homeConfig\.json
+
+\.DS_Store

@@ -62,9 +62,12 @@ const makeAppRouter = async (tree) => {
     "              <Route exact path={'/category/' + category} render={() => {\n" +
     "                return (\n" +
     "                  <CategoryContent title={category} num={filteredArray.length}>\n" +
-    "                    {filteredArray.map(item => (\n" +
-    "                      <ArticleEntry title={item.title} category={item.category} time={item.time}\n" +
-    "                                    path={item.path} content={item.content}/>))}\n" +
+    "" +
+    "                    <Home json={JSON.stringify(filteredArray)}>\n" +
+    "\n" +
+    "                    </Home>" +
+    "" +
+    "" +
     "                  </CategoryContent>\n" +
     "                )\n" +
     "              }}></Route>\n" +

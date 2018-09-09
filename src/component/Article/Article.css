@@ -2,6 +2,19 @@
     position: relative;
     width: 70%;
     margin: 0 auto;
+    animation: cubic-bezier(.2,.5,.3,.8) hover .2s;
+}
+
+@keyframes hover {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @media screen and (max-width: 750px){

@@ -1,6 +1,19 @@
 .home-post {
     position: relative;
     margin-bottom: 15px;
+    animation: cubic-bezier(.2,.5,.3,.8) hover .2s;
+}
+
+@keyframes hover {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .home-post-block {
