@@ -1,3 +1,11 @@
 node_modules
 .idea
 src/post
+
+dist/
+
+src/route/
+
+src/appRouter\.js
+
+src/homeConfig\.json
