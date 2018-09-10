@@ -42,7 +42,7 @@
     "build": "webpack --config ./config/webpack.prod.js",
     "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
     "new": "node ./bin/touch.js",
-    "generate": "mkdir ./src/route && node ./bin/generate.js",
+    "generate": "node ./bin/generate.js",
     "routing": "node ./bin/makeRoute.js",
     "cleanup": "node ./bin/cleanup.js",
     "jujuber": "npm run cleanup && npm run generate && npm run routing && npm run build",
