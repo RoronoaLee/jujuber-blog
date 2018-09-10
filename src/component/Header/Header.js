@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css';
+import {Link} from 'react-router-dom';
 
 export default class Header extends Component {
 
@@ -22,7 +23,7 @@ export default class Header extends Component {
     return (
       <div className="header-inner">
         <div className="site-meta">
-          <div className="site-title">{this.props.siteName}</div>
+          <Link to='/'><div className="site-title">{this.props.siteName}</div></Link>
           <div className="site-description">{this.props.siteDescription}</div>
           <div onClick={this.handleToggleButtonClick.bind(this)} className="toggle-btn">{/*toggle按钮*/}</div>
         </div>
