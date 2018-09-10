@@ -6,6 +6,7 @@ import NavItem from './component/NavItem/NavItem'
 import Header from './component/Header/Header';
 import FlexWrapper from './component/FlexWrapper/FlexWrapper';
 import {HashRouter} from 'react-router-dom';
+import json from '../manifest';
 
 
 
@@ -13,7 +14,7 @@ import {HashRouter} from 'react-router-dom';
 ReactDOM.render(
   <HashRouter>
     <FlexWrapper>
-      <Header siteName="雪枣的笔记" siteDescription="一些记录">
+      <Header siteName={json.title} siteDescription={json.description}>
         <Nav>
           <NavItem kind='home' pathName='/' itemName='首页'/>
           <NavItem kind='category' pathName='/category' itemName='归档'/>
@@ -21,7 +22,6 @@ ReactDOM.render(
         </Nav>
       </Header>
       <AppRouter/>
-
     </FlexWrapper>
   </HashRouter>
   , document.body);

@@ -4,7 +4,30 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 750px){
+.category-content-header {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.category-content-header .category-content-title{
+    font-size: 30px;
+    color: rgba(1, 1, 1, .65);
+    text-decoration: none;
+    transition: border-bottom-width .2s ease-in;
+}
+
+.category-content-header .category-content-meta{
+    font-size: 14px;
+    color: rgba(1, 1, 1, .65);
+    text-decoration: none;
+    transition: border-bottom-width .2s ease-in;
+}
+
+.append-info .home-posts {
+    width: 100% ;
+}
+
+@media screen and (max-width: 750px) {
     .category-content-block {
         display: block;
         width: 100%;
