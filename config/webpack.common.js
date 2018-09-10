@@ -1,7 +1,7 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-import json from '../manifest';
+const json = require( '../manifest');
 
 module.exports = {
   entry: {
